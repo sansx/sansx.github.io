@@ -1,2 +1,2 @@
 # sansx.github.io
-xth's blog
+Sansx's blog
