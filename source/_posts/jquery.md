@@ -2,7 +2,7 @@
 title: 前端学习笔记NO.001
 ---
 
-> 锋利的jquery
+### 锋利的jquery
 
 `$().toggle(fn1,fn2,...,fnN)`通过n次点击，按顺序循环执行函数
 `$().toggle()`也可用于切换元素显示状态  
