@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/sansx">
-  <title>Tag: linux | Sansx的博客</title>
+  <title>前端下载资源方法 | Sansx的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Sansx的博客">
-<meta property="og:url" content="https://github.com/sansx/tags/linux/index.html">
+  <meta name="description" content="&amp;nbsp;日常场景中，在下载资源时，常用的方法是，将静态资源上传至服务器，之后通过a标签的href，获取资源的路径开始下载，这其中免不了需要后端的一番配置，但是如果需要下载的只是一个几行文字的txt文件，亦或是一张图片，这样就显得有些繁琐。">
+<meta name="keywords" content="h5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端下载资源方法">
+<meta property="og:url" content="https://github.com/sansx/2018/09/05/webdownload/index.html">
 <meta property="og:site_name" content="Sansx的博客">
+<meta property="og:description" content="&amp;nbsp;日常场景中，在下载资源时，常用的方法是，将静态资源上传至服务器，之后通过a标签的href，获取资源的路径开始下载，这其中免不了需要后端的一番配置，但是如果需要下载的只是一个几行文字的txt文件，亦或是一张图片，这样就显得有些繁琐。">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-09-05T03:35:06.986Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sansx的博客">
+<meta name="twitter:title" content="前端下载资源方法">
+<meta name="twitter:description" content="&amp;nbsp;日常场景中，在下载资源时，常用的方法是，将静态资源上传至服务器，之后通过a标签的href，获取资源的路径开始下载，这其中免不了需要后端的一番配置，但是如果需要下载的只是一个几行文字的txt文件，亦或是一张图片，这样就显得有些繁琐。">
   
     <link rel="alternative" href="/atom.xml" title="Sansx的博客" type="application/atom+xml">
   
@@ -134,168 +139,183 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-webdownload" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      前端下载资源方法
+    </h1>
+  
+
+        
+        <a href="/2018/09/05/webdownload/" class="archive-article-date">
+  	<time datetime="2018-09-05T03:35:06.986Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-05</time>
+</a>
+        
+      </header>
+      
+        <span class="archive-article-date">
+            阅读量 <span id="busuanzi_value_page_pv"></span>
+        </span>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;</h3><p>日常场景中，在下载资源时，常用的方法是，将静态资源上传至服务器，之后通过a标签的href，获取资源的路径开始下载，这其中免不了需要后端的一番配置，但是如果需要下载的只是一个几行文字的txt文件，亦或是一张图片，这样就显得有些繁琐。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&apos;https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png&apos; download=&quot;google_logo.png&quot;&gt;下载&lt;/a&gt;</span><br></pre></td></tr></table></figure></p>
+<p>在浏览器中，这段代码表示，此为可下载链接，只需点击就能下载链接地址的图片。</p>
+<blockquote>
+<h4 id="download-MDN"><a href="#download-MDN" class="headerlink" title="download(MDN):"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a" target="_blank" rel="noopener">download(MDN)</a>:</h4><p>此属性指示浏览器下载URL而不是导航到URL，因此将提示用户将其保存为本地文件。<br>如果属性有一个值，它将在保存提示中用作预先填写的文件名 (用户仍然可以根据需要更改文件名)。对允许的值没有限制，但是/和\被转换为下划线。大多数文件系统限制文件名中的一些标点符号，浏览器会相应地调整建议的名称。</p>
+</blockquote>
+<p>如果仅仅是向浏览器表明链接地址为可下载，<code>download</code>属性看起来可有可无，但是如果有方法让a标签不是指向链接地址，而是直接等于需要下载的数据，使标签自身就是需要下载的文件，那么我们甚至可以不需要知道文件所在的地址（甚至文件本身并不存在），就可以完成下载。</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/data_URIs" target="_blank" rel="noopener"><strong><code>Data URLs</code></strong></a>或许可以将这个想法转化为现实，<strong>Data URLs</strong>，即前缀为 <code>data:</code> 协议的的URL，其允许内容创建者向文档中嵌入小文件。</p>
+<p>这意味着，我们可以将文件数据通过url的形式来将其表现。</p>
+<h5 id="首先看一下语法："><a href="#首先看一下语法：" class="headerlink" title="首先看一下语法："></a>首先看一下语法：</h5><p>Data URLs 由四个部分组成：前缀(data:)、指示数据类型的MIME类型、如果非文本则为可选的base64标记、数据本身：</p>
+<blockquote>
+<p>data:[<mediatype>][;base64],<data>  </data></mediatype></p>
+</blockquote>
+<p>简单的来说：一个内容为“Hello,  World”的txt文件可以表示为：<br>    <code>data:,Hello%2C%20World</code></p>
+<blockquote>
+<p>试着将其作为a标签中的链接地址：</p>
+</blockquote>
+<blockquote>
+<p><code>&lt;a href=&#39;data:,Hello%2C%20World&#39; download=&quot;hello_world.txt&quot;&gt;下载&lt;/a&gt;</code> </p>
+</blockquote>
+<p>点击a标签下载文件<code>hello_world.txt</code>后，将其打开，可以看到文件内容的确是我们想要的<strong>Hello,  World</strong></p>
+<blockquote>
+<p>另外通过js的全局函数encodeURIComponent，同样可以方便地将文本编码成data url数据</p>
+</blockquote>
+<p>至此，我们已经可以成功的将文本作为数据保存在a标签中，并且可以方便地点击下载文本文件。</p>
+<hr>
+<p>图片文件的下载，与文本下载类似，只要想办法将图片转化为data url形式，之后作为a标签href的值即可，这里简单说一下思路：</p>
+<blockquote>
+<ol>
+<li>通过canvas的drawImage方法，将图片输出到canvas中。</li>
+<li>使用canvas中的toDataURL，通过参数指定需要输出为dataurl的范围，将canvas中的图片数据输出为data。</li>
+<li>为href属性传入数据</li>
+</ol>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/06/centos3/" class="archive-article-date">
-  	<time datetime="2018-08-06T02:27:16.219Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/06/centos3/">centos7 安装Node.js + npm + pm2</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">centos7</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Node.js</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">pm2</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">h5</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/sansx/2018/09/05/webdownload/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/06/centos1/" class="archive-article-date">
-  	<time datetime="2018-08-06T02:27:16.218Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/08/06/webpack1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">webpack简单打包</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/06/centos1/">centos7 FTP服务安装配置</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">centos7</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/06/centos2/" class="archive-article-date">
-  	<time datetime="2018-08-06T02:27:16.218Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/06/centos2/">centos7 安装Docker + nginx</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">centos7</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Docker</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">nginx</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -327,9 +347,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
