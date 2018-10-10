@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sansx的博客">
 <meta property="og:description" content="&amp;nbsp;日常场景中，在下载资源时，常用的方法是，将静态资源上传至服务器，之后通过a标签的href，获取资源的路径开始下载，这其中免不了需要后端的一番配置，但是如果需要下载的只是一个几行文字的txt文件，亦或是一张图片，这样就显得有些繁琐。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-05T03:35:06.986Z">
+<meta property="og:updated_time" content="2018-10-10T01:55:31.331Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端下载资源方法">
 <meta name="twitter:description" content="&amp;nbsp;日常场景中，在下载资源时，常用的方法是，将静态资源上传至服务器，之后通过a标签的href，获取资源的路径开始下载，这其中免不了需要后端的一番配置，但是如果需要下载的只是一个几行文字的txt文件，亦或是一张图片，这样就显得有些繁琐。">
@@ -176,7 +176,7 @@
 <blockquote>
 <p>data:[<mediatype>][;base64],<data>  </data></mediatype></p>
 </blockquote>
-<p>简单的来说：一个内容为“Hello,  World”的txt文件可以表示为：<br>    <code>data:,Hello%2C%20World</code></p>
+<p>简单的来说：一个内容为“Hello,  World”的txt文件可以表示为：<br>​    <code>data:,Hello%2C%20World</code></p>
 <blockquote>
 <p>试着将其作为a标签中的链接地址：</p>
 </blockquote>
@@ -185,7 +185,7 @@
 </blockquote>
 <p>点击a标签下载文件<code>hello_world.txt</code>后，将其打开，可以看到文件内容的确是我们想要的<strong>Hello,  World</strong></p>
 <blockquote>
-<p>另外通过js的全局函数encodeURIComponent，同样可以方便地将文本编码成data url数据</p>
+<p>另外通过js的全局函数<code>encodeURIComponent</code>，同样可以方便地将文本编码成data url数据</p>
 </blockquote>
 <p>至此，我们已经可以成功的将文本作为数据保存在a标签中，并且可以方便地点击下载文本文件。</p>
 <hr>
@@ -193,10 +193,11 @@
 <blockquote>
 <ol>
 <li>通过canvas的drawImage方法，将图片输出到canvas中。</li>
-<li>使用canvas中的toDataURL，通过参数指定需要输出为dataurl的范围，将canvas中的图片数据输出为data。</li>
-<li>为href属性传入数据</li>
+<li>使用canvas中的toDataURL，通过参数指定需要输出为dataurl的范围，即可将所选范围中的图片数据输出为dataurl。</li>
+<li>将输出的数据传入a标签中。</li>
 </ol>
 </blockquote>
+<hr>
 
       
 
@@ -425,6 +426,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">CoffeeScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Node.js</a>
               </li>
              
@@ -434,10 +439,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">pm2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">CoffeeScript</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -457,6 +458,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">h5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
@@ -466,10 +471,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">webpack</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">h5</a>
               </li>
             
             <div class="clearfix"></div>
