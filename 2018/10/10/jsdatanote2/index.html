@@ -6,21 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/sansx">
-  <title>前端学习笔记NO.001 | Sansx的博客</title>
+  <title>学习js数据结构与算法（2） | Sansx的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="锋利的jquery$().toggle(fn1,fn2,...,fnN)通过n次点击，按顺序循环执行函数$().toggle()也可用于切换元素显示状态   $().trigger(&amp;#39;click&amp;#39;)=$().click()触发绑定的事件函数，使触发元素获得焦点（浏览器默认操作）。 $().triggerHandler(&amp;#39;click&amp;#39;)仅触发事件函数   jquery">
+  <meta name="description" content="&amp;nbsp;数组是常用的数据结构，尽管可以在数组的任意位置上删除或添加元素。然而，有时我们还需要一种在添加或删除元素时有更多控制的数据结构。有两种类似于数组但是更为可控的数据类型，称之为栈和队列。 栈 栈是一种遵从后进先出（LIFO）原则的有序集合。新添加的或待删除的元素都保存在栈的同一端，称作栈顶，另一端为栈底。在栈里，新元素都靠近栈顶，旧元素都接近栈底。">
+<meta name="keywords" content="JavaScript,算法,数据">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端学习笔记NO.001">
-<meta property="og:url" content="https://github.com/sansx/2018/08/06/jquery/index.html">
+<meta property="og:title" content="学习js数据结构与算法（2）">
+<meta property="og:url" content="https://github.com/sansx/2018/10/10/jsdatanote2/index.html">
 <meta property="og:site_name" content="Sansx的博客">
-<meta property="og:description" content="锋利的jquery$().toggle(fn1,fn2,...,fnN)通过n次点击，按顺序循环执行函数$().toggle()也可用于切换元素显示状态   $().trigger(&amp;#39;click&amp;#39;)=$().click()触发绑定的事件函数，使触发元素获得焦点（浏览器默认操作）。 $().triggerHandler(&amp;#39;click&amp;#39;)仅触发事件函数   jquery">
+<meta property="og:description" content="&amp;nbsp;数组是常用的数据结构，尽管可以在数组的任意位置上删除或添加元素。然而，有时我们还需要一种在添加或删除元素时有更多控制的数据结构。有两种类似于数组但是更为可控的数据类型，称之为栈和队列。 栈 栈是一种遵从后进先出（LIFO）原则的有序集合。新添加的或待删除的元素都保存在栈的同一端，称作栈顶，另一端为栈底。在栈里，新元素都靠近栈顶，旧元素都接近栈底。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://ws3.sinaimg.cn/large/005uFoOQly1fiib9v3079g30dw07thag.gif">
-<meta property="og:updated_time" content="2018-08-07T01:08:31.474Z">
+<meta property="og:image" content="http://images3.10qianwan.com/10qianwan/20180919/b_0_201809191439244359.jpg">
+<meta property="og:image" content="http://interactivepython.org/courselib/static/pythonds/_images/simpleparcheck.png">
+<meta property="og:updated_time" content="2018-10-12T05:50:33.720Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端学习笔记NO.001">
-<meta name="twitter:description" content="锋利的jquery$().toggle(fn1,fn2,...,fnN)通过n次点击，按顺序循环执行函数$().toggle()也可用于切换元素显示状态   $().trigger(&amp;#39;click&amp;#39;)=$().click()触发绑定的事件函数，使触发元素获得焦点（浏览器默认操作）。 $().triggerHandler(&amp;#39;click&amp;#39;)仅触发事件函数   jquery">
-<meta name="twitter:image" content="http://ws3.sinaimg.cn/large/005uFoOQly1fiib9v3079g30dw07thag.gif">
+<meta name="twitter:title" content="学习js数据结构与算法（2）">
+<meta name="twitter:description" content="&amp;nbsp;数组是常用的数据结构，尽管可以在数组的任意位置上删除或添加元素。然而，有时我们还需要一种在添加或删除元素时有更多控制的数据结构。有两种类似于数组但是更为可控的数据类型，称之为栈和队列。 栈 栈是一种遵从后进先出（LIFO）原则的有序集合。新添加的或待删除的元素都保存在栈的同一端，称作栈顶，另一端为栈底。在栈里，新元素都靠近栈顶，旧元素都接近栈底。">
+<meta name="twitter:image" content="http://images3.10qianwan.com/10qianwan/20180919/b_0_201809191439244359.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Sansx的博客" type="application/atom+xml">
   
@@ -140,20 +142,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-jquery" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-jsdatanote2" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      前端学习笔记NO.001
+      学习js数据结构与算法（2）
     </h1>
   
 
         
-        <a href="/2018/08/06/jquery/" class="archive-article-date">
-  	<time datetime="2018-08-06T02:27:16.220Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
+        <a href="/2018/10/10/jsdatanote2/" class="archive-article-date">
+  	<time datetime="2018-10-10T06:15:10.660Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-10</time>
 </a>
         
       </header>
@@ -165,39 +167,64 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="锋利的jquery"><a href="#锋利的jquery" class="headerlink" title="锋利的jquery"></a>锋利的jquery</h3><p><code>$().toggle(fn1,fn2,...,fnN)</code>通过n次点击，按顺序循环执行函数<br><code>$().toggle()</code>也可用于切换元素显示状态  </p>
-<p><code>$().trigger(&#39;click&#39;)=$().click()</code>触发绑定的事件函数，使触发元素获得焦点（浏览器默认操作）。</p>
-<p><code>$().triggerHandler(&#39;click&#39;)</code>仅触发事件函数</p>
-<hr>
+        <h3 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;</h3><p>数组是常用的数据结构，尽管可以在数组的任意位置上删除或添加元素。然而，有时我们还需要一种在添加或删除元素时有更多控制的数据结构。有两种类似于数组但是更为可控的数据类型，称之为栈和队列。</p>
+<h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><blockquote>
+<p>栈是一种遵从后进先出（LIFO）原则的有序集合。新添加的或待删除的元素都保存在栈的同一端，称作栈顶，另一端为栈底。在栈里，新元素都靠近栈顶，旧元素都接近栈底。  </p>
+</blockquote>
+<a id="more"></a>
+<h4 id="创建栈"><a href="#创建栈" class="headerlink" title="创建栈"></a>创建栈</h4><p>一个栈类需要有如下几个方法：</p>
 <ul>
-<li>jquery中使用<code>stopPropagation()</code>阻止事件冒泡;</li>
-<li><code>event.preventDefault()</code>阻止默认行为（表单提交、链接跳转）;</li>
-<li>js中<code>return false</code>;<a id="more"></a>
-<code>event.target()</code>获取触发事件的元素</li>
+<li><code>push(element(s))</code>：添加一个（或几个）新元素到栈顶。</li>
+<li><code>pop()</code>：移除栈顶的元素，同时返回被移除的元素。</li>
+<li><code>peek()</code>：返回栈顶的元素，不对栈做任何修改。</li>
+<li><code>isEmpty()</code>：如果栈里没有任何元素就返回<code>true</code>，否则返回<code>false</code>。</li>
+<li><code>clear()</code>：移除栈里的所有元素。</li>
+<li><code>size()</code>：返回栈里的元素个数。与数组的<code>length</code>属性类似。</li>
 </ul>
-<p>mouseover 和 mouseout 所发生的元素可以通过<code>event.target</code>访问，相关元素通过<code>event.telatedTarget()</code>访问(触发事件所经过的节点)</p>
-<p><code>event.pageX()/event.pageY()</code>获取光标到页面的X,Y坐标，相当于<code>ev.clientX+document.body.scrollLeft/ev.clientY+document.body.scrollTop</code>非IE</p>
-<p>绑定事件<code>$().bind(&#39;click&#39;,fn1).bind(&#39;click&#39;,fn2)</code>,类似js中<code>addEventListener()</code>;</p>
 <blockquote>
-<p>可以绑定自定义事件<code>$().bind(&#39;myClick&#39;,fn)</code>,通过<code>$().trigger(&#39;myClick&#39;)</code>触发</p>
+<p>尽管ES6引入了类的语法，由于js本身并没有私有变量这个概念，所以创建的栈相当容易被外部修改。</p>
 </blockquote>
-<p>移除事件<code>$().unbind()</code>;</p>
-<p>只执行一次<code>$().one()</code>;</p>
-<h3 id="jquery动画"><a href="#jquery动画" class="headerlink" title="jquery动画"></a>jquery动画</h3><blockquote>
-<p>动画要求在标准模式下，否则会引起画面抖动  </p>
+<h4 id="用栈解决问题"><a href="#用栈解决问题" class="headerlink" title="用栈解决问题"></a>用栈解决问题</h4><h5 id="1-进制转换"><a href="#1-进制转换" class="headerlink" title="1. 进制转换"></a>1. 进制转换</h5><p><img src="http://images3.10qianwan.com/10qianwan/20180919/b_0_201809191439244359.jpg" alt="图片"></p>
+<blockquote>
+<p>十进制转二进制的方法：使用十进制的数据不断除以2，直到商为0为止，从下往上取余就是对应的二进制。</p>
 </blockquote>
-<p><code>$(&#39;element&#39;).hide()</code>相当于<code>element.css(&#39;display&#39;,&#39;none&#39;)</code>隐藏元素<br><code>$(&#39;element&#39;).show()</code>显示元素<br>通过添加参数产生动画效果<code>$(&#39;element&#39;).hide(100)</code>,元素在100ms（毫秒）内隐藏<br><code>$(&#39;element&#39;).fadeIn()/$(&#39;element&#39;).fadeOut()</code>改变元素透明度<br><code>$(&#39;element&#39;).slideUP()/$(&#39;element&#39;).slideDown()</code>改变元素高度</p>
-<h5 id="自定义动画"><a href="#自定义动画" class="headerlink" title="自定义动画"></a>自定义动画</h5><p><code>$().animate({left:&#39;50px&#39;,height:&#39;50px&#39;},1000)</code>右滑的同时改变高度<br><code>$().animate({left:&#39;50px&#39;},1000).animate({height:&#39;50px&#39;},1000)</code><strong>先</strong>右滑<strong>之后</strong>改变高度<br>动画回调函数，在动画执行完后执行<code>$().animate({},time,fn)</code>  </p>
-<p>######　其他交互方法</p>
-<ol>
-<li><code>toggle(speed,[callback])</code></li>
-<li><code>slideToggle(speed,[callbakc])</code></li>
-<li><code>fadeTo(speed,opacity,[callback])</code>  </li>
-</ol>
-<hr>
-<p>动画实例：<a href="http://xthtx.site/jqdemo1.html" target="_blank" rel="noopener">点击查看</a></p>
-<hr>
-<p><img src="http://ws3.sinaimg.cn/large/005uFoOQly1fiib9v3079g30dw07thag.gif" alt="流水"></p>
+<p>我们可以将每一次的余数传入栈中，当计算结束时，再将栈内的所有余数按顺序取出，连接为字符串，即为传入参数的二进制形式。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * @param &#123;Number&#125; decnum </span></span><br><span class="line"><span class="comment"> * 二进制转化函数</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">divideBy2</span>(<span class="params">decnum</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> remStack = <span class="keyword">new</span> Stack(),			<span class="comment">//之前构造的栈类，含有提到的所有方法。</span></span><br><span class="line">    rem,</span><br><span class="line">    binaryString = <span class="string">""</span></span><br><span class="line">    <span class="keyword">while</span>(decnum&gt;<span class="number">0</span>)&#123;					<span class="comment">//当参数大于0时，循环</span></span><br><span class="line">        rem = <span class="built_in">Math</span>.floor(decnum % <span class="number">2</span>)	<span class="comment">//求余</span></span><br><span class="line">        remStack.push(rem)				<span class="comment">//将求得的数传入栈中</span></span><br><span class="line">        decnum = <span class="built_in">Math</span>.floor(decnum/<span class="number">2</span>)	<span class="comment">//将除2后的数向下取整，储存为变量</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(!remStack.isEmpty())&#123;			<span class="comment">//当栈不为空时循环</span></span><br><span class="line">        binaryString += remStack.pop().toString()  <span class="comment">//输出栈顶余数，拼接为二进制</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> binaryString</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>经过测试后，可以发现这个函数可以正确转化十进制为二进制。<br>而在这个函数的基础之上，我们还可以将这个函数改造为高阶函数，使其可以返回十进制以下的任意进制。</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">divideByN</span>(<span class="params">num</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">decnum</span>)</span>&#123; <span class="comment">//返回一个函数</span></span><br><span class="line">        <span class="keyword">let</span> remStack = <span class="keyword">new</span> Stack(),</span><br><span class="line">        rem,</span><br><span class="line">        binaryString = <span class="string">""</span></span><br><span class="line">        <span class="keyword">while</span>(decnum&gt;<span class="number">0</span>)&#123;</span><br><span class="line">            rem = <span class="built_in">Math</span>.floor(decnum % num) 	<span class="comment">//</span></span><br><span class="line">            remStack.push(rem)</span><br><span class="line">            decnum = <span class="built_in">Math</span>.floor(decnum/num) <span class="comment">//</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(!remStack.isEmpty())&#123;</span><br><span class="line">            binaryString += remStack.pop().toString()</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> binaryString</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> newfn = divideByN(<span class="number">2</span>) <span class="comment">//返回一个转化为二进制的函数</span></span><br><span class="line"><span class="built_in">console</span>.log(newfn(<span class="number">10</span>))</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>将上述代码在控制台输出，可以发现结果正确为<code>10--&gt;1010</code>，之所以只能转化为十以下的进制是因为，一共只有0～9这10个数字，超过十进制之后需要用大写字母表示10及以上的数字。</p>
+<p>10—A，11—B，12—C，13—D…</p>
+</blockquote>
+<h5 id="2-平衡括号"><a href="#2-平衡括号" class="headerlink" title="2. 平衡括号"></a>2. 平衡括号</h5><p>在编程过程中，括号必须是平衡的。平衡括号的意思是，每个左括号一定对应着一个右括号，括号内又套着括号。看下面这些个括号组成的平衡表达式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(()()()())</span><br><span class="line"></span><br><span class="line">(((())))</span><br><span class="line"></span><br><span class="line">(()((())()))</span><br></pre></td></tr></table></figure>
+<p>对比下面这些不平衡的括号：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">((((((())</span><br><span class="line"></span><br><span class="line">()))</span><br><span class="line"></span><br><span class="line">(()()(()</span><br></pre></td></tr></table></figure></p>
+<p>正确地区分平衡和不平衡括号，对很多编程语言来说，都是重要的内容。</p>
+<p>在js中一共会使用到3种括号：<code>[]、{}、()</code></p>
+<p>那么现在有个问题，如何判断一段<strong>括号字符串</strong>的括号是否平衡。</p>
+<p>仔细观察一下平衡式的结构特点。当从左到右读入一串括号的时候，最早读到的一个右括号总是与他前面的紧邻的左括号匹配，同样，最后一个右括号要与最先读到的左括号相匹配。即右括号与左括号是反序的，它们从内到外一一匹配，这就给我们启示，可以用栈来解决问题。</p>
+<p><img src="http://interactivepython.org/courselib/static/pythonds/_images/simpleparcheck.png" alt=""><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">parenthesesChecker</span>(<span class="params">symbols</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> stack = <span class="keyword">new</span> Stack();</span><br><span class="line">  <span class="keyword">const</span> opens = <span class="string">'([&#123;'</span>;</span><br><span class="line">  <span class="keyword">const</span> closers = <span class="string">')]&#125;'</span>;</span><br><span class="line">  <span class="keyword">let</span> balanced = <span class="literal">true</span>;</span><br><span class="line">  <span class="keyword">let</span> index = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">let</span> symbol;</span><br><span class="line">  <span class="keyword">let</span> top;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (index &lt; symbols.length &amp;&amp; balanced) &#123;</span><br><span class="line">    symbol = symbols[index];</span><br><span class="line">    <span class="keyword">if</span> (opens.indexOf(symbol) &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">      stack.push(symbol);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (stack.isEmpty()) &#123;</span><br><span class="line">      balanced = <span class="literal">false</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      top = stack.pop();</span><br><span class="line">      <span class="keyword">if</span> (!(opens.indexOf(top) === closers.indexOf(symbol))) &#123;</span><br><span class="line">        balanced = <span class="literal">false</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    index++;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> balanced &amp;&amp; stack.isEmpty();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这个函数首先创建了<code>opens</code>和<code>closers</code>这两个变量，将括号拆分为左右两个集合，且位置一一对应，用作之后的对照判断，<code>balanced</code>做为是否平衡的判断，以此来作为控制<code>while</code>循环条件的一部分。</p>
+<ul>
+<li><p>进入循环后，将传入的括号字符串第<code>index</code>个字符取出，做为变量<code>symbol</code>的值。</p>
+<blockquote>
+<p>index初始值为0，在while循环中累加</p>
+</blockquote>
+</li>
+<li><p>首先判断，<code>symbol</code>是否存在于<code>opens</code>中，如果存在，将<code>symbol</code>存入栈中。</p>
+</li>
+<li><p>|– 如果不存在，表示<code>symbol</code>为右半边括号，当栈为空，即栈中没有左半边与之对应，则括号必然不平衡，将<code>balanced</code>设为<code>false</code>，中止循环。</p>
+</li>
+<li><p><code>symbol</code>为右半边括号，当栈中存有左半部分括号时，将栈顶的括号取出，与<code>symbol</code>比较，判断是否对应：</p>
+</li>
+<li><p>|— <code>opens.indexOf(top) === closers.indexOf(symbol)</code>为<code>true</code>时，继续循环。<code>index++</code></p>
+</li>
+<li><p>|—否则，将<code>balanced</code>设为<code>false</code>，中止循环。<br>.<br>.<br>.</p>
+</li>
+<li>循环结束后返回结果</li>
+</ul>
 
       
 
@@ -206,6 +233,25 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -256,7 +302,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/sansx/2018/08/06/jquery/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/sansx/2018/10/10/jsdatanote2/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -270,18 +316,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/08/06/jquerydemo1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JQuery实例--1（在线聊天）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/08/06/coffeescript1/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">CoffeeScript 中 switch-when 语句编译后为何是switch (false)</div>
+    <a href="/2018/10/10/jsdatanote1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">学习js数据结构与算法（1）</div>
       <i class="icon-circle-right"></i>
     </a>
   
