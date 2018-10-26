@@ -1,7 +1,7 @@
 ---
 title: 前端学习笔记NO.002
 ---
->锋利的jquery
+### 锋利的jquery
 
 **JS中Ajax的应用***  
 

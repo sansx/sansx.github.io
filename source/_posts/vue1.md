@@ -6,6 +6,7 @@ tags:
 	- api
 ---
 
+### 预先配置
 由于豆瓣api跨域问题，因此不能直接通过ajax请求访问，我们通过vue-cli提供给我们的代理（proxy）进行配置即可，打开config/index.js，配置代理proxyTable属性如下：
 ```
 //在proxyTable这个属性中，配置target属性为我们要代理的目标地址。
@@ -33,3 +34,4 @@ getImages( _url ){
       }
     }
 ```
+

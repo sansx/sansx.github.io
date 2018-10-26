@@ -1,11 +1,12 @@
 ---
-title: "table的样式问题--来自stackoverflow的解答(一)"  
+title: "table样式问题--stackoverflow的解答(一)"  
 comments: true  
 tags: 
 	- css
 	- stackoverflow
 ---
-前言：Stack Overflow由Jeff Atwood及Joel Spolsky在2008年创立，是一个程序设计领域的问答网站，隶属Stack Exchange Network。其中的问题包涵关于编程几乎的所有领域，解答的质量极高，现将我遇到的问题及解答记录，用作备忘。
+## 前言：
+Stack Overflow由Jeff Atwood及Joel Spolsky在2008年创立，是一个程序设计领域的问答网站，隶属Stack Exchange Network。其中的问题包涵关于编程几乎的所有领域，解答的质量极高，现将我遇到的问题及解答记录，用作备忘。
 
 
 #### Q1：[如何添加margin到table中的&lt;tr&gt;？](https://stackoverflow.com/questions/10690299/how-to-add-a-margin-to-a-table-row-tr)
