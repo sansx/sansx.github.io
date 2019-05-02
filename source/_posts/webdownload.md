@@ -28,8 +28,7 @@ Data URLs 由四个部分组成：前缀(data:)、指示数据类型的MIME类�
 ​    `data:,Hello%2C%20World`
 
  >试着将其作为a标签中的链接地址：
-
-  > `<a href='data:,Hello%2C%20World' download="hello_world.txt">下载</a>` 
+ > `<a href='data:,Hello%2C%20World' download="hello_world.txt">下载</a>` 
 
 点击a标签下载文件`hello_world.txt`后，将其打开，可以看到文件内容的确是我们想要的**Hello,  World**
 >另外通过js的全局函数`encodeURIComponent`，同样可以方便地将文本编码成data url数据
