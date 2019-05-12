@@ -1,0 +1,47 @@
+---
+title: "[译]如何通过SQLite创建、打开、备份数据库"  
+comments: true  
+tags: 
+	- 翻译
+	- databases 
+	- SQLite
+---
+　
+---
+> * 原文地址：[How to Create, Open, Backup Database in SQLite
+](https://www.guru99.com/sqlite-database.html)
+> * 译者：[Sansx](https://github.com/sansx)
+
+
+SQLite是一种非常轻量级的数据库。不像其他数据库系统，无需配置安装即可开始使用。  
+仅仅只是需要SQLite库（SQLite library）——它的大小不超过500KB。  
+**话不多说，让我们直接开始**。  
+在本教程中，你将会学习：
+* [创建数据库](#SQLite创建数据库)
+* 通过使用SQLite的open指令在指定路径创建数据库
+* 创建一个数据库并使用文件中的表填充它
+* 备份一个数据库
+* 删除数据库
+<!-- more -->
+
+## SQLite创建数据库
+与其他数据库管理系统不同，SQLite中没有CREATE DATABASE命令。在SQLite中，以下是创建新数据库的方法：
+* 打开开始菜单输入**“cmd”**搜索并打开Windows命令行工具（cmd.exe）。
+* **“cmd”**将会在默认用户目录下打开，在我的电脑上，是**“C:\Users\MGA”**
+　　![](https://i.loli.net/2019/05/03/5ccbe00b54867.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
