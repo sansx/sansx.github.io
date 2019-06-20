@@ -1,5 +1,6 @@
 ---
 title: "学习js数据结构与算法（2）"  
+date: 2018-10-26
 tags: 
 	- JavaScript
 	- 算法

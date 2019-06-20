@@ -1,5 +1,6 @@
 ---
 title: "[译]本地项目（django）连接数据库（postgres）出现问题"  
+date: 2019-05-18
 comments: true  
 tags: 
 	- 翻译

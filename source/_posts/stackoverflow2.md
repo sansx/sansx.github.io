@@ -1,5 +1,6 @@
 ---
 title: "无法连接到数据库--stackoverflow的解答(二)"  
+date: 2019-05-02
 comments: true  
 tags: 
 	- mysql

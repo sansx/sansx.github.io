@@ -1,5 +1,6 @@
 ---
 title: "centos7 安装Docker + nginx"  
+date: 2018-05-19
 tags: 
 	- linux
 	- centos7

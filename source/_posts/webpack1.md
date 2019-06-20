@@ -1,5 +1,6 @@
 ---
 title: "webpack简单打包"  
+date: 2018-12-05
 comments: true  
 tags: 
 	- npm

@@ -1,5 +1,6 @@
 ---
 title: "centos7 安装Node.js + npm + pm2"  
+date: 2018-05-30
 tags: 
 	- linux
 	- centos7

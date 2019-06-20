@@ -1,5 +1,6 @@
 ---
 title: "centos7 FTP服务安装配置"  
+date: 2018-05-12
 tags: 
 	- linux
 	- centos7

@@ -1,5 +1,6 @@
 ---
 title: "Vue制作豆瓣电影（调用api测试）"  
+date: 2018-06-02
 comments: true  
 tags: 
 	- vue
