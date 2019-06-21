@@ -136,20 +136,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-jsdatanote2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-docker-res1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/10/jsdatanote2/">学习js数据结构与算法（2）</a>
+      <a class="article-title" href="/2019/06/10/docker-res1/">近期关于docker的问题</a>
     </h1>
   
 
         
-        <a href="/2018/10/10/jsdatanote2/" class="archive-article-date">
-  	<time datetime="2018-10-10T06:15:10.660Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-10</time>
+        <a href="/2019/06/10/docker-res1/" class="archive-article-date">
+  	<time datetime="2019-06-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-10</time>
 </a>
         
       </header>
@@ -157,268 +157,96 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;</h3><p>数组是常用的数据结构，尽管可以在数组的任意位置上删除或添加元素。然而，有时我们还需要一种在添加或删除元素时有更多控制的数据结构。有两种类似于数组但是更为可控的数据类型，称之为栈和队列。</p>
-<h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><blockquote>
-<p>栈是一种遵从后进先出（LIFO）原则的有序集合。新添加的或待删除的元素都保存在栈的同一端，称作栈顶，另一端为栈底。在栈里，新元素都靠近栈顶，旧元素都接近栈底。  </p>
+        <h3 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;</h3><p>由于docker对win7的支持不是那么友好，有问题的地方不少，有时甚至不得不使用”特殊”的方法使用和操作docker容器。以下是几篇对我有帮助的文章，稍有修改。点击标题或者原文地址可查看原文。</p>
+<h3 id="启动docker"><a href="#启动docker" class="headerlink" title="启动docker"></a>启动docker</h3>
+        
+          <a class="article-more-a" href="/2019/06/10/docker-res1/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">docker</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/06/10/docker-res1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-TRANS-django-error1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/18/TRANS-django-error1/">[译]本地项目（django）连接数据库（postgres）出现问题</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/18/TRANS-django-error1/" class="archive-article-date">
+  	<time datetime="2019-05-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-18</time>
+</a>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;  "></a>&nbsp;  </h2><blockquote>
+<ul>
+<li>原文地址：<a href="http://support.divio.com/local-development/troubleshooting/local-project-has-problems-connecting-to-its-database" target="_blank" rel="noopener">Local project has problems connecting to its database</a></li>
+<li>原文作者：Daniele Procida</li>
+<li>译者：<a href="https://github.com/sansx">sansx</a></li>
+</ul>
 </blockquote>
-        
-          <a class="article-more-a" href="/2018/10/10/jsdatanote2/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/10/jsdatanote2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-jsdatanote1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/10/jsdatanote1/">学习js数据结构与算法（1）</a>
-    </h1>
-  
-
-        
-        <a href="/2018/10/10/jsdatanote1/" class="archive-article-date">
-  	<time datetime="2018-10-10T03:44:34.780Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-10</time>
-</a>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;</h3><p>最近尝试了一下leetcode，尽管愉快的解决了第一题，但是在查看标准解决方案时，涉及了算法方面的解析，因为对于算法理解不深，看下来是一知半解，正好最近下载了《学习JavaScript数据结构与算法》，暂且先放下leetcode，开始学习算法。</p>
-<h2 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h2>
-        
-          <a class="article-more-a" href="/2018/10/10/jsdatanote1/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数组</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/10/jsdatanote1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-webdownload" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/05/webdownload/">前端下载资源方法</a>
-    </h1>
-  
-
-        
-        <a href="/2018/09/05/webdownload/" class="archive-article-date">
-  	<time datetime="2018-09-05T03:35:06.986Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-05</time>
-</a>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;</h3><p>日常场景中，在下载资源时，常用的方法是，将静态资源上传至服务器，之后通过a标签的href，获取资源的路径开始下载，这其中免不了需要后端的一番配置，但是如果需要下载的只是一个几行文字的txt文件，亦或是一张图片，这样就显得有些繁琐。<br>
-        
-          <a class="article-more-a" href="/2018/09/05/webdownload/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">h5</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/05/webdownload/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-webpack1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/06/webpack1/">webpack简单打包</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/06/webpack1/" class="archive-article-date">
-  	<time datetime="2018-08-06T02:27:16.223Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
-</a>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="webpack安装"><a href="#webpack安装" class="headerlink" title="webpack安装"></a>webpack安装</h3><p>安装为开发依赖：<code>npm install webpack –save-dev</code>  </p>
 <blockquote>
-<p>简写<code>npm -i webpack -D</code></p>
+<p>此文章来自<a href="https://www.divio.com/" target="_blank" rel="noopener">Divio</a>，为保证文章的通用性会，删除一些相关部分。<br>此文章的项目都是运行在docker下，容器基于docker-compose创建。</p>
 </blockquote>
-<h3 id="项目配置"><a href="#项目配置" class="headerlink" title="项目配置"></a>项目配置</h3>
         
-          <a class="article-more-a" href="/2018/08/06/webpack1/#more">more >></a>
+          <a class="article-more-a" href="/2019/05/18/TRANS-django-error1/#more">more >></a>
         
       
 
@@ -432,11 +260,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">翻译</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">webpack</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">databases</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">docker</a>
         		</li>
       		
 		</ul>
@@ -446,7 +278,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/06/webpack1/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/05/18/TRANS-django-error1/">展开全文 >></a>
         </p>
       
 
@@ -476,20 +308,20 @@
 
 
   
-    <article id="post-vue1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-win7-docker" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/06/vue1/">Vue制作豆瓣电影（调用api测试）</a>
+      <a class="article-title" href="/2019/05/12/win7-docker/">修改windows7下的docker源</a>
     </h1>
   
 
         
-        <a href="/2018/08/06/vue1/" class="archive-article-date">
-  	<time datetime="2018-08-06T02:27:16.222Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
+        <a href="/2019/05/12/win7-docker/" class="archive-article-date">
+  	<time datetime="2019-05-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-12</time>
 </a>
         
       </header>
@@ -497,9 +329,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="预先配置"><a href="#预先配置" class="headerlink" title="预先配置"></a>预先配置</h3><p>由于豆瓣api跨域问题，因此不能直接通过ajax请求访问，我们通过vue-cli提供给我们的代理（proxy）进行配置即可，打开config/index.js，配置代理proxyTable属性如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//在proxyTable这个属性中，配置target属性为我们要代理的目标地址。</span><br><span class="line">proxyTable: &#123;</span><br><span class="line">    &apos;/api&apos;: &#123;</span><br><span class="line">      target: &apos;http://api.douban.com/v2&apos;,</span><br><span class="line">      changeOrigin: true,</span><br><span class="line">      pathRewrite: &#123;</span><br><span class="line">        &apos;^/api&apos;: &apos;&apos;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
+        <h3 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;</h3><p>最近折腾docker时发现，win7并不能直接安装<a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows" target="_blank" rel="noopener">Docker Desktop for Windows</a>，根据官方所说win10之前的版本只能通过<a href="https://docs.docker.com/toolbox/overview/" target="_blank" rel="noopener">Docker Toolbox</a>来使用docker。<br>安装完，在拉取镜像时，发现下载速度慢如龟爬，显然问题出在docker源上，由于普通的修改源方法并不适合win7，在经历了各种尝试之后，终于成功修改了docker源。</p>
+<h3 id="1-启动docker"><a href="#1-启动docker" class="headerlink" title="1. 启动docker"></a>1. 启动docker</h3>
         
-          <a class="article-more-a" href="/2018/08/06/vue1/#more">more >></a>
+          <a class="article-more-a" href="/2019/05/12/win7-docker/#more">more >></a>
         
       
 
@@ -513,11 +346,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">docker</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">api</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">windows</a>
         		</li>
       		
 		</ul>
@@ -527,7 +360,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/06/vue1/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/05/12/win7-docker/">展开全文 >></a>
         </p>
       
 
@@ -557,20 +390,20 @@
 
 
   
-    <article id="post-nodespider" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-stackoverflow2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/06/nodespider/">Node爬虫备忘</a>
+      <a class="article-title" href="/2019/05/02/stackoverflow2/">无法连接到数据库--stackoverflow的解答(二)</a>
     </h1>
   
 
         
-        <a href="/2018/08/06/nodespider/" class="archive-article-date">
-  	<time datetime="2018-08-06T02:27:16.222Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
+        <a href="/2019/05/02/stackoverflow2/" class="archive-article-date">
+  	<time datetime="2019-05-01T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-02</time>
 </a>
         
       </header>
@@ -578,10 +411,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在爬取了某某电影站的3,000多条数据（下载链接）试手之后，发现爬虫结合<a href="https://mozilla.github.io/nunjucks/cn/templating.html" target="_blank" rel="noopener">nunjucks</a>，感觉可以弄一个不错的网站集合，把我常用的网站整合成一个页面，应该能提高不少信息获取的效率。</p>
-<p>现在暂时开了一个小头，者期间关于node的好用的工具或是技巧，慢慢整理在此作为备忘。<br>
+        <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>Stack Overflow由Jeff Atwood及Joel Spolsky在2008年创立，是一个程序设计领域的问答网站，隶属Stack Exchange Network。其中的问题包涵关于编程几乎的所有领域，解答的质量极高，现将我遇到的问题及解答记录，用作备忘。</p>
+<h4 id="Q1：host不被允许连接到此MYSQL服务（Host-‘xxx-xx-xxx-xxx’-is-not-allowed-to-connect-to-this-MySQL-server）"><a href="#Q1：host不被允许连接到此MYSQL服务（Host-‘xxx-xx-xxx-xxx’-is-not-allowed-to-connect-to-this-MySQL-server）" class="headerlink" title="Q1：host不被允许连接到此MYSQL服务（Host ‘xxx.xx.xxx.xxx’ is not allowed to connect to this MySQL server）"></a>Q1：<a href="https://stackoverflow.com/questions/1559955/host-xxx-xx-xxx-xxx-is-not-allowed-to-connect-to-this-mysql-server" target="_blank" rel="noopener">host不被允许连接到此MYSQL服务<br>（Host ‘xxx.xx.xxx.xxx’ is not allowed to connect to this MySQL server）</a></h4>
         
-          <a class="article-more-a" href="/2018/08/06/nodespider/#more">more >></a>
+          <a class="article-more-a" href="/2019/05/02/stackoverflow2/#more">more >></a>
         
       
 
@@ -595,11 +428,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">stackoverflow</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">爬虫</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
         		</li>
       		
 		</ul>
@@ -609,7 +442,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/06/nodespider/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/05/02/stackoverflow2/">展开全文 >></a>
         </p>
       
 
@@ -646,13 +479,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/06/stackoverflow1/">table样式问题--stackoverflow的解答(一)</a>
+      <a class="article-title" href="/2019/04/22/stackoverflow1/">table样式问题--stackoverflow的解答(一)</a>
     </h1>
   
 
         
-        <a href="/2018/08/06/stackoverflow1/" class="archive-article-date">
-  	<time datetime="2018-08-06T02:27:16.222Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
+        <a href="/2019/04/22/stackoverflow1/" class="archive-article-date">
+  	<time datetime="2019-04-21T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-22</time>
 </a>
         
       </header>
@@ -661,9 +494,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>Stack Overflow由Jeff Atwood及Joel Spolsky在2008年创立，是一个程序设计领域的问答网站，隶属Stack Exchange Network。其中的问题包涵关于编程几乎的所有领域，解答的质量极高，现将我遇到的问题及解答记录，用作备忘。</p>
-<h4 id="Q1：如何添加margin到table中的-lt-tr-gt-？"><a href="#Q1：如何添加margin到table中的-lt-tr-gt-？" class="headerlink" title="Q1：如何添加margin到table中的&lt;tr&gt;？"></a>Q1：<a href="https://stackoverflow.com/questions/10690299/how-to-add-a-margin-to-a-table-row-tr" target="_blank" rel="noopener">如何添加margin到table中的&lt;tr&gt;？</a></h4>
+<h3 id="Q1：如何添加margin到table中的-lt-tr-gt-？"><a href="#Q1：如何添加margin到table中的-lt-tr-gt-？" class="headerlink" title="Q1：如何添加margin到table中的&lt;tr&gt;？"></a>Q1：<a href="https://stackoverflow.com/questions/10690299/how-to-add-a-margin-to-a-table-row-tr" target="_blank" rel="noopener">如何添加margin到table中的&lt;tr&gt;？</a></h3>
         
-          <a class="article-more-a" href="/2018/08/06/stackoverflow1/#more">more >></a>
+          <a class="article-more-a" href="/2019/04/22/stackoverflow1/#more">more >></a>
         
       
 
@@ -691,7 +524,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/06/stackoverflow1/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/04/22/stackoverflow1/">展开全文 >></a>
         </p>
       
 
@@ -721,20 +554,20 @@
 
 
   
-    <article id="post-jquery2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-webdownload" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/06/jquery2/">前端学习笔记NO.002</a>
+      <a class="article-title" href="/2019/03/02/webdownload/">前端下载资源方法</a>
     </h1>
   
 
         
-        <a href="/2018/08/06/jquery2/" class="archive-article-date">
-  	<time datetime="2018-08-06T02:27:16.221Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
+        <a href="/2019/03/02/webdownload/" class="archive-article-date">
+  	<time datetime="2019-03-01T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-02</time>
 </a>
         
       </header>
@@ -742,13 +575,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="锋利的jquery"><a href="#锋利的jquery" class="headerlink" title="锋利的jquery"></a>锋利的jquery</h3><p><strong>JS中Ajax的应用*</strong>  </p>
-<ol>
-<li>实例化对象<code>var demo = new XMLHttpRequest();</code>  </li>
-<li>通过<code>open()</code>初始化对象<code>demo.send(&quot;GET/POST&quot;,URL,是否异步);</code>  </li>
-<li><p>当readyState值被改变时，会触发readystatechange事件，可通过onreadystatechange属性注册该回调函数事件处理器：<br><code>demo.onreadystatechange=callback;//设置回调函数</code>  </p>
+        <h3 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;</h3><p>日常场景中，在下载资源时，常用的方法是，将静态资源上传至服务器，之后通过a标签的href，获取资源的路径开始下载，这其中免不了需要后端的一番配置，但是如果需要下载的只是一个几行文字的txt文件，亦或是一张图片，这样就显得有些繁琐。<br>
         
-          <a class="article-more-a" href="/2018/08/06/jquery2/#more">more >></a>
+          <a class="article-more-a" href="/2019/03/02/webdownload/#more">more >></a>
         
       
 
@@ -757,11 +586,22 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">h5</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/06/jquery2/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/03/02/webdownload/">展开全文 >></a>
         </p>
       
 
@@ -791,20 +631,20 @@
 
 
   
-    <article id="post-mysqlbase" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-webpack1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/06/mysqlbase/">MYSQL数据库基础操作</a>
+      <a class="article-title" href="/2018/12/05/webpack1/">webpack简单打包</a>
     </h1>
   
 
         
-        <a href="/2018/08/06/mysqlbase/" class="archive-article-date">
-  	<time datetime="2018-08-06T02:27:16.221Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
+        <a href="/2018/12/05/webpack1/" class="archive-article-date">
+  	<time datetime="2018-12-04T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-05</time>
 </a>
         
       </header>
@@ -812,14 +652,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;</h2><blockquote>
-<p>数据库虽然时常有接触，但是细节部分容易忘记，因此将基础部分重新写一遍，一是复习，二是以后可以直接查看，一切从简。(指令为windows环境下的dos)</p>
-</blockquote>
-<h4 id="服务器操作"><a href="#服务器操作" class="headerlink" title="*服务器操作"></a>*服务器操作</h4><p>开启mysql服务器:<br><code>net start mysql</code><br>停止mysql:<br><code>net stop mysql</code><br>连接服务器:<code>\&gt;mysql -u(用户名) -h(服务器地址) -p(密码)</code></p>
+        <h3 id="webpack安装"><a href="#webpack安装" class="headerlink" title="webpack安装"></a>webpack安装</h3><p>安装为开发依赖：<code>npm install webpack –save-dev</code>  </p>
 <blockquote>
-<p>tip:开发环境下服务器地址可以跳过，默认为’127.0.0.1’<br><strong>-p后面直接接上密码，不能出现空格</strong><br>
+<p>简写<code>npm -i webpack -D</code></p>
+</blockquote>
+<h3 id="项目配置"><a href="#项目配置" class="headerlink" title="项目配置"></a>项目配置</h3>
         
-          <a class="article-more-a" href="/2018/08/06/mysqlbase/#more">more >></a>
+          <a class="article-more-a" href="/2018/12/05/webpack1/#more">more >></a>
         
       
 
@@ -828,11 +667,26 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">webpack</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/06/mysqlbase/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/12/05/webpack1/">展开全文 >></a>
         </p>
       
 
@@ -862,20 +716,20 @@
 
 
   
-    <article id="post-jquerydemo1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-jsdatanote2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/06/jquerydemo1/">JQuery实例--1（在线聊天）</a>
+      <a class="article-title" href="/2018/10/26/jsdatanote2/">学习js数据结构与算法（2）</a>
     </h1>
   
 
         
-        <a href="/2018/08/06/jquerydemo1/" class="archive-article-date">
-  	<time datetime="2018-08-06T02:27:16.221Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
+        <a href="/2018/10/26/jsdatanote2/" class="archive-article-date">
+  	<time datetime="2018-10-25T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-26</time>
 </a>
         
       </header>
@@ -883,17 +737,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="实例展示"><a href="#实例展示" class="headerlink" title="实例展示"></a>实例展示</h3><p><strong>在线聊天室</strong><br><img src="https://cl.ly/361J3N3W0S43/2.gif" alt=""></p>
-<blockquote>
-<p>《锋利的jquery》主题内容之后，附带了一个在线聊天室的实例代码参考，在理解了大致思路之后，我按照自己的想法制作了一个聊天室，后续可能会有扩展（待定）</p>
+        <h3 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;</h3><p>数组是常用的数据结构，尽管可以在数组的任意位置上删除或添加元素。然而，有时我们还需要一种在添加或删除元素时有更多控制的数据结构。有两种类似于数组但是更为可控的数据类型，称之为栈和队列。</p>
+<h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><blockquote>
+<p>栈是一种遵从后进先出（LIFO）原则的有序集合。新添加的或待删除的元素都保存在栈的同一端，称作栈顶，另一端为栈底。在栈里，新元素都靠近栈顶，旧元素都接近栈底。  </p>
 </blockquote>
-<p></p><h3>1.实现思路</h3><p></p>
-<ul>
-<li>简单的来说就是将本地信息的上传到网络，之后同步信息到另外一个页面；</li>
-<li>因为js需要借助后端来交互数据，所以这次后端选用php;</li>
-<li>大致流程：
         
-          <a class="article-more-a" href="/2018/08/06/jquerydemo1/#more">more >></a>
+          <a class="article-more-a" href="/2018/10/26/jsdatanote2/#more">more >></a>
         
       
 
@@ -902,11 +751,202 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/06/jquerydemo1/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/10/26/jsdatanote2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-jsdatanote1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/17/jsdatanote1/">学习js数据结构与算法（1）</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/17/jsdatanote1/" class="archive-article-date">
+  	<time datetime="2018-10-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-17</time>
+</a>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;</h3><p>最近尝试了一下leetcode，尽管愉快的解决了第一题，但是在查看标准解决方案时，涉及了算法方面的解析，因为对于算法理解不深，看下来是一知半解，正好最近下载了《学习JavaScript数据结构与算法》，暂且先放下leetcode，开始学习算法。</p>
+<h2 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h2>
+        
+          <a class="article-more-a" href="/2018/10/17/jsdatanote1/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数据</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数组</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/17/jsdatanote1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-nodespider" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/05/nodespider/">Node爬虫备忘</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/05/nodespider/" class="archive-article-date">
+  	<time datetime="2018-08-04T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
+</a>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在爬取了某某电影站的3,000多条数据（下载链接）试手之后，发现爬虫结合<a href="https://mozilla.github.io/nunjucks/cn/templating.html" target="_blank" rel="noopener">nunjucks</a>，感觉可以弄一个不错的网站集合，把我常用的网站整合成一个页面，应该能提高不少信息获取的效率。</p>
+<p>现在暂时开了一个小头，者期间关于node的好用的工具或是技巧，慢慢整理在此作为备忘。<br>
+        
+          <a class="article-more-a" href="/2018/08/05/nodespider/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">爬虫</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/05/nodespider/">展开全文 >></a>
         </p>
       
 
@@ -950,14 +990,14 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 Sansx
+    		&copy; 2019 Sansx
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
     </div>
 	</div>
-	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 	</script>
 	</script>
 	<span id="busuanzi_container_site_pv">
@@ -1034,6 +1074,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">翻译</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">databases</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
@@ -1050,10 +1102,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">CoffeeScript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Node.js</a>
               </li>
              
@@ -1066,35 +1114,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">CoffeeScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">node</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">css</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">stackoverflow</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">h5</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">api</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1111,6 +1139,38 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">数组</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">stackoverflow</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">api</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">windows</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">h5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
             
             <div class="clearfix"></div>
