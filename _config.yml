@@ -41,7 +41,7 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
 
 # Category & Tag
 default_category: uncategorized
@@ -55,7 +55,6 @@ tag_map:
 archive: 1
 category: 1
 tag: 1
-
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -72,33 +71,53 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yilia
+# theme: yilia
+theme: archer
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 
-deploy: 
- type: git
- repo: git@github.com:sansx/sansx.github.io.git
- branch: master
+deploy:
+  type: git
+  repo: git@github.com:sansx/sansx.github.io.git
+  branch: master
 
+  #JSON
+#  config of theme yilia
+# jsonContent:
+#     meta: false
+#     pages: false
+#     posts:
+#       title: true
+#       date: true
+#       path: true
+#       text: false
+#       raw: false
+#       content: false
+#       slug: false
+#       updated: false
+#       comments: false
+#       link: false
+#       permalink: false
+#       excerpt: false
+#       categories: false
+#       tags: true
 
- #JSON
 jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
+  meta: true
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: true
+    excerpt: false
+    categories: true
+    tags: true
